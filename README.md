@@ -4,8 +4,11 @@ RSpec `include_context_for`
 
 Load a hierarchy of shared contexts based on file location
 
-Overview
---------
+## 2017-09 update
+
+**IMPORTANT!** A more compact and easy to use implementation is available at [dadooda/rspec_include_dir_context](https://github.com/dadooda/rspec_include_dir_context), please consider.
+
+## Overview
 
 It's always a good idea to maintain a consistent logical structure for all code in a software project.
 Specs are no exception to this.
@@ -16,8 +19,7 @@ As a result, in 99% of the projects shared examples are just piled up together u
 
 This extension offers a solution to this problem.
 
-Usage
------
+## Usage
 
 * Create a number of path-based shared contexts ([RSpec docs](https://www.relishapp.com/rspec/rspec-core/docs/example-groups/shared-context)) named like `"/"`, `"/models"`, etc.
 * Make your `spec_helper.rb` load your path-based shared contexts.
@@ -25,9 +27,7 @@ Usage
 
 Based on the file argument **a hierarchy** of existing path-based shared contexts **will be loaded**.
 
-
-Example
--------
+## Example
 
 ```ruby
 #
@@ -70,15 +70,12 @@ RSpec.shared_context "/controllers" do
 end
 ```
 
-Setup
------
+## Setup
 
 This project is a *sub*. Sub setup example is available [here](https://github.com/dadooda/subs#setup).
 
 For more info on subs, click [here](https://github.com/dadooda/subs).
 
-
-Cheers!
--------
+## Cheers!
 
 &mdash; Alex Fortuna, &copy; 2016
